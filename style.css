@@ -1,0 +1,211 @@
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header {
+    background-image: url("images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.header ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    margin-bottom: 28rem;
+}
+.ct{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: #000000;
+    font-weight:bolder;
+}
+.ct:hover{
+    color: #000000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .c {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .c:first-child {
+    background: #fefcf7;
+}
+
+.container .c:nth-child(3) {
+    background: #fefcf7;
+}
+
+.container .c img {
+    width: 100%;
+    height: auto;
+}
+
+.container .c p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5a636c;
+    text-align: center;
+}
+
+.d, .photography {
+    padding: 4rem;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.d {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+}
+
+.photography {
+    background-image: url("images/desktop/image-photography.jpg");
+}
+
+.graphic p, .photography p {
+    text-align: center;
+    max-width: 350px;
+    color: #25564b;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6rem 2rem;
+    background: #fefcf7;
+}
+
+.container2 h2 {
+    text-align: center;
+    color: #a7abae;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 4rem;
+    grid-column: 1 / -1;
+}
+
+.container2 .c {
+    text-align: center;
+    padding: 2rem;
+}
+
+.container2 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.container2 p {
+    color: #5a636c;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer {
+    background: #90d4c5;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #458c7e;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.info a {
+    color: #25564b;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .container2,
+    .container3 {
+    grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+    font-size: 2rem;
+    }
+
+    .header ul {
+    display: none;
+    }
+}
