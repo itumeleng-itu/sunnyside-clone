@@ -189,6 +189,22 @@ body {
     color: #25564b;
 }
 
+/*notes -- add a media query on the nav bar so it can be a hamburger menu*/
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
 @media (max-width: 768px) {
     .container,
     .container2,
@@ -200,10 +216,29 @@ body {
     font-size: 2rem;
     }
 
-    .header ul {
+    .header .links {
     display: none;
     }
+
+   .links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1em;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
 
 
-/*notes -- add a media query on the nav bar so it can be a hamburger menu*/
+
