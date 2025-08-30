@@ -54,15 +54,12 @@ body {
     margin-bottom: 28rem;
 }
 .ct{
-    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
-    border-radius: 25px;
-    background-color: white;
-    color: #000000;
+    background-color: transparent;
     font-weight:bolder;
 }
 .ct:hover{
-    color: #000000;
+    color: #0a22ba;
 }
 
 .container {
